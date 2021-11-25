@@ -36,56 +36,56 @@ module.exports = {
     ],
     experiences: [
         {
-            company: 'Monstarlab Bangladesh',
-            position: 'Backend Engineer II',
-            from: 'September 2021',
+            company: 'Stootie HALTAE',
+            position: 'Ruby Developer',
+            from: 'September 2020',
             to: 'Present'
         },
         {
-            company: 'Orangetoolz',
-            position: 'Jr. Full Stack Engineer',
-            from: 'July 2019',
-            to: 'August 2021'
+            company: 'RingCentral Engage Digital',
+            position: 'Jr. Ruby Developer',
+            from: 'April 2019',
+            to: 'June 2020'
         },
         {
-            company: 'Techvillage',
-            position: 'Jr. Software Engineer',
-            from: 'January 2019',
-            to: ' June 2019'
+            company: 'RingCentral Engage Digital',
+            position: 'Jr. Golang Developer',
+            from: 'September 2018',
+            to: 'January 2019'
+        },
+        {
+            company: 'Slaask',
+            position: 'Jr. Ruby Developer',
+            from: 'October 2016',
+            to: 'July 2017'
         }
     ],
     education: [
         {
-            institution: 'American International University-Bangladesh',
-            degree: 'Bachelor of Science',
-            from: '2015',
+            institution: 'EPITECH',
+            degree: 'IT Master',
+            from: '2018',
             to: '2019'
         },
         {
-            institution: 'Cantonment College, Jessore',
-            degree: 'Higher Secondary Certificate (HSC)',
-            from: '2012',
-            to: '2014',
-        },
-        {
-            institution: 'Chowgacha Shahadat Pilot High School',
-            degree: 'Secondary School Certificate (SSC)',
-            from: '2007',
-            to: '2012'
+            institution: 'EPITECH',
+            degree: 'IT Bachelor',
+            from: '2015',
+            to: '2017',
         }
     ],
     blog: {
         // Display blog posts from your medium or dev.to account. (Optional)
-        source: 'dev.to', // medium | dev.to
-        username: 'arifszn',
+        source: '', // medium | dev.to
+        username: '',
         limit: 2 // How many posts to display. Max is 10.
     },
     googleAnalytics: {
         // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
-        id: 'G-WLLB5E14M6' // Please remove this and use your own tag id or keep it empty
+        id: '' // Please remove this and use your own tag id or keep it empty
     },
     hotjar: {
-        id: '2617601', //  Please remove this and use your own id or keep it empty
+        id: '', //  Please remove this and use your own id or keep it empty
         snippetVersion : 6
     },
     themeConfig: {
