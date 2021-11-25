@@ -1,14 +1,14 @@
 {
-    "name": "ezprofile",
+    "name": "remolive",
     "version": "1.1.0",
     "description": "Kickstart your personal portfolio with Github Api and blog",
-    "homepage": "https://remolive.github.io/ezprofile",
+    "homepage": "https://remolive.github.io",
     "private": true,
     "license": "Apache-2.0",
     "author": "arifszn",
     "repository": {
         "type": "git",
-        "url": "https://github.com/arifszn/ezprofile.git"
+        "url": "https://github.com/remolive/remolive.github.git"
     },
     "dependencies": {
         "@craco/craco": "^6.2.0",
