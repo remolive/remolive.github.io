@@ -1,7 +1,7 @@
 // config.js
 module.exports = {
     github: {
-        username: 'arifszn', // Your GitHub org/user name. (Required)
+        username: 'remolive', // Your GitHub org/user name. (Required)
         sortBy: 'stars', // stars | updated
         limit: 8, // How many projects to display.
         exclude: {
@@ -10,47 +10,44 @@ module.exports = {
         }
     },
     social: {
-        linkedin: 'ariful-alam',
-        twitter: 'arif_swozon',
+        linkedin: 'olivier-rémy-b5a456110',
+        twitter: '',
         facebook: '',
         dribbble: '',
         behance: '',
         medium: '',
-        devto: 'arifszn',
-        website: 'https://arifszn.github.io',
+        devto: '',
+        website: 'https://remolive.github.io',
         phone: '',
-        email: 'arifulalamszn@gmail.com'
+        email: 'olivier.remyy@gmail.com'
     },
     skills: [
-        'PHP',
-        'Laravel',
+        'Ruby',
+        'Sinatra',
+        'Rails',
+        'PostgreSQL',
         'JavaScript',
-        'React.js',
-        'Vue.js',
-        'Node.js',
         'Jquery',
-        'MySQL',
+        'React.js',
+        'CSS',
         'Git',
         'Docker',
-        'CSS',
-        'Antd',
-        'Tailwind',
-        'Bootstrap',
+        'AWS'
     ],
     experiences: [
-        { 
+        {
             company: 'Monstarlab Bangladesh',
             position: 'Backend Engineer II',
             from: 'September 2021',
             to: 'Present'
         },
-        { 
+        {
             company: 'Orangetoolz',
             position: 'Jr. Full Stack Engineer',
             from: 'July 2019',
             to: 'August 2021'
         },
-        { 
+        {
             company: 'Techvillage',
             position: 'Jr. Software Engineer',
             from: 'January 2019',
@@ -58,19 +55,19 @@ module.exports = {
         }
     ],
     education: [
-        { 
+        {
             institution: 'American International University-Bangladesh',
             degree: 'Bachelor of Science',
             from: '2015',
             to: '2019'
         },
-        { 
+        {
             institution: 'Cantonment College, Jessore',
             degree: 'Higher Secondary Certificate (HSC)',
             from: '2012',
             to: '2014',
         },
-        { 
+        {
             institution: 'Chowgacha Shahadat Pilot High School',
             degree: 'Secondary School Certificate (SSC)',
             from: '2007',
