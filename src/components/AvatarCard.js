@@ -8,59 +8,62 @@ const AvatarCard = (props) => {
     const [loading] = useContext(LoadingContext);
 
     return (
-        <div className="card shadow-lg compact bg-base-100">
-            <div className="grid place-items-center py-8">
-                {
-                    (loading || !props.profile) ? (
-                        <div className="avatar opacity-90">
-                            <div className="mb-8 rounded-full w-32 h-32">
-                                {
-                                    skeleton({
-                                        width: 'w-full',
-                                        height: 'h-full',
-                                        shape: '',
-                                    })
-                                }
+        <>
+            <iframe id="oleen-contact-form" src="https://oleen-api-staging-92cc8cf6663e.herokuapp.com/public/mortgage/opportunities/new?external_id=d691467c-1fdc-4491-87f3-069441f3e383" width="100%" height="1620" ></iframe>
+            <div className="card shadow-lg compact bg-base-100">
+                <div className="grid place-items-center py-8">
+                    {
+                        (loading || !props.profile) ? (
+                            <div className="avatar opacity-90">
+                                <div className="mb-8 rounded-full w-32 h-32">
+                                    {
+                                        skeleton({
+                                            width: 'w-full',
+                                            height: 'h-full',
+                                            shape: '',
+                                        })
+                                    }
+                                </div>
                             </div>
-                        </div>
-                    ) : (
-                        <div className="avatar opacity-90">
-                            <div className="mb-8 rounded-full w-32 h-32 ring ring-primary ring-offset-base-100 ring-offset-2">
-                                {
-                                    <LazyImage
-                                        src={props.profile.avatar ? props.profile.avatar : fallbackImage}
-                                        alt={props.profile.name}
-                                        placeholder={
-                                            skeleton({
-                                                width: 'w-full',
-                                                height: 'h-full',
-                                                shape: '',
-                                            })
-                                        }
-                                    />
-                                }
+                        ) : (
+                            <div className="avatar opacity-90">
+                                <div className="mb-8 rounded-full w-32 h-32 ring ring-primary ring-offset-base-100 ring-offset-2">
+                                    {
+                                        <LazyImage
+                                            src={props.profile.avatar ? props.profile.avatar : fallbackImage}
+                                            alt={props.profile.name}
+                                            placeholder={
+                                                skeleton({
+                                                    width: 'w-full',
+                                                    height: 'h-full',
+                                                    shape: '',
+                                                })
+                                            }
+                                        />
+                                    }
+                                </div>
                             </div>
+                        )
+                    }
+                    <div className="text-center mx-auto px-8">
+                        <h5 className="font-bold text-2xl">
+                            {
+                                (loading || !props.profile) ? (
+                                    skeleton({ width: 'w-48', height: 'h-8' })
+                                ) : <span className="opacity-70">{props.profile.name}</span>
+                            }
+                        </h5>
+                        <div className="mt-3 text-base-content text-opacity-60">
+                            {
+                                (loading || !props.profile) ? (
+                                    skeleton({ width: 'w-48', height: 'h-5' })
+                                ) : props.profile.bio
+                            }
                         </div>
-                    )
-                }
-                <div className="text-center mx-auto px-8">
-                    <h5 className="font-bold text-2xl">
-                        {
-                            (loading || !props.profile) ? (
-                                skeleton({ width: 'w-48', height: 'h-8' })
-                            ) : <span className="opacity-70">{props.profile.name}</span>
-                        }
-                    </h5>
-                    <div className="mt-3 text-base-content text-opacity-60">
-                        {
-                            (loading || !props.profile) ? (
-                                skeleton({ width: 'w-48', height: 'h-5' })
-                            ) : props.profile.bio
-                        }
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
