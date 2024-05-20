@@ -10,7 +10,6 @@ import Skill from "./components/Skill";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Project from "./components/Project";
-import Blog from "./components/Blog";
 import MetaTags from "./components/MetaTags";
 import { LoadingContext } from "./contexts/LoadingContext";
 import { ThemeContext } from "./contexts/ThemeContext";
@@ -156,7 +155,6 @@ function App() {
                                     <div className="lg:col-span-2 col-span-1">
                                         <div className="grid grid-cols-1 gap-6">
                                             <Project repo={repo}/>
-                                            <Blog/>
                                         </div>
                                     </div>
                                 </div>
